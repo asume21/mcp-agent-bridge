@@ -12,8 +12,7 @@ An MCP server enabling AI agent-to-agent communication (Cascade ↔ Codex).
 ## Setup
 
 ```bash
-npm install
-npm run build
+pip install -r requirements.txt
 ```
 
 ## Configure in Windsurf
@@ -24,8 +23,8 @@ Add to your MCP settings:
 {
   "mcpServers": {
     "agent-bridge": {
-      "command": "node",
-      "args": ["d:/mcp-servers/agent-bridge/dist/index.js"]
+      "command": "python",
+      "args": ["d:/mcp-servers/agent-bridge/server.py"]
     }
   }
 }
